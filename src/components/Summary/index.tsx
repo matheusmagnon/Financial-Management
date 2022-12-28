@@ -2,7 +2,7 @@ import { ArrowCircleUp } from 'phosphor-react';
 import { ArrowCircleDown } from 'phosphor-react';
 import { CurrencyDollar } from 'phosphor-react';
 
-import { defaultTheme } from '../../../styles/themes/default';
+import { defaultTheme } from '../../styles/themes/default';
 import { SummaryCard, SummaryContainer } from './styles';
 
 export function Summary() {
