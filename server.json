@@ -13,7 +13,7 @@
       "description": "Hamburguer",
       "type": "outcome",
       "category": "Alimentação",
-      "price": 29,
+      "price": -29,
       "createdAt": "2022-12-27T19:20:40.701Z"
     },
     {
@@ -21,7 +21,7 @@
       "description": "Aluguel do apartamento",
       "type": "outcome",
       "category": "Casa",
-      "price": 1.4,
+      "price": -1400,
       "createdAt": "2022-12-18T19:20:40.701Z"
     }
   ]
