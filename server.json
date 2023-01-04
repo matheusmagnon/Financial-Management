@@ -23,6 +23,30 @@
       "category": "Casa",
       "price": 1400,
       "createdAt": "2022-12-18T19:20:40.701Z"
+    },
+    {
+      "description": "Desenvolvimento de API",
+      "price": 3,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-01-04T18:36:29.812Z",
+      "id": 4
+    },
+    {
+      "description": "Água",
+      "price": 512,
+      "category": "Despesa Fixa",
+      "type": "outcome",
+      "createdAt": "2023-01-04T18:37:30.808Z",
+      "id": 5
+    },
+    {
+      "description": "Iorgurte de morango",
+      "price": 10,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-01-04T19:08:00.412Z",
+      "id": 6
     }
   ]
 }
