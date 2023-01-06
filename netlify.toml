@@ -1,5 +1,4 @@
 [build]
 base="."
-command ="npm run build"
-command ="npm run dev:server"
+command ="npm run build && npm run dev:server"
 publish ="./dist/"
