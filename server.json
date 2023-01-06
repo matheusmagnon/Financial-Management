@@ -1,52 +1,12 @@
 {
   "transactions": [
     {
-      "description": "Desenvolvimento de API",
-      "price": 3,
-      "category": "Venda",
+      "description": "Salário",
+      "price": 2500,
+      "category": "Salário",
       "type": "income",
-      "createdAt": "2023-01-04T18:36:29.812Z",
-      "id": 4
-    },
-    {
-      "description": "Iorgurte de morango",
-      "price": 10,
-      "category": "Alimentação",
-      "type": "outcome",
-      "createdAt": "2023-01-04T19:08:00.412Z",
-      "id": 6
-    },
-    {
-      "description": "Aula de Música",
-      "price": 200,
-      "category": "Gasto",
-      "type": "outcome",
-      "createdAt": "2023-01-06T20:24:11.365Z",
-      "id": 7
-    },
-    {
-      "description": "Venda de software",
-      "price": 1500,
-      "category": "Venda",
-      "type": "income",
-      "createdAt": "2023-01-06T20:24:31.441Z",
-      "id": 8
-    },
-    {
-      "description": "Outra Coisa",
-      "price": 1500,
-      "category": "Venda",
-      "type": "income",
-      "createdAt": "2023-01-06T20:24:31.441Z",
-      "id": 8
-    },
-    {
-      "description": "Venda de software",
-      "price": 1500,
-      "category": "Venda",
-      "type": "income",
-      "createdAt": "2023-01-06T20:24:31.441Z",
-      "id": 8
+      "createdAt": "2023-01-06T23:14:21.593Z",
+      "id": 1
     }
   ]
 }

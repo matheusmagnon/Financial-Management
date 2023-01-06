@@ -1,4 +1,4 @@
-# DT Money (Aplicação para gestão Financeira ) -Apenas para monitores grandes-
+# DT Money (Aplicação para gestão Financeira )
 
 Desafio de React do ignite (Rocketseat)
 
@@ -8,15 +8,14 @@ Desafio de React do ignite (Rocketseat)
 
 ## Design da aplicação
 
-- Clique [aqui](https://coffe-delivery-all4s.ondigitalocean.app/) para acessar a aplicação em produção(apenas desktop)
+- Clique [aqui](https://dtfinancialmanager.netlify.app/) para acessar a aplicação em produção(apenas desktop)
 - Clique [aqui](<https://www.figma.com/file/e3vav64scmovejkQMZkw20/DT-Money-(Community)?node-id=42012%3A399&t=6jjwbnHRtzUe1TQ4-0>) para acessar o layout no Figma
 
 ## Funcionalidades da aplicação
 
-- Adicionar cafés ao carrinho
-- Aumentar e Diminuir quantidade de cafés selecionados
-- Remover café do carrinho
-- Preencher formulário e método de pagamento
+- Listar transações
+- Adicionar uma nova transação de "Entrada" ou "Saída"
+- Excluir transação
 
 ## Tecnologias utilizadas
 
@@ -24,15 +23,12 @@ Desafio de React do ignite (Rocketseat)
 - Typescript
 - Vite
 - Context API
-- useReducer
-- Immer
+- radix-ui
 - Styled components
-- React router
 - React hook form
 - Zod
 - Axios
 - Phosphor React
-- uuid
 
 ## Como executar a aplicação
 
@@ -41,13 +37,13 @@ Desafio de React do ignite (Rocketseat)
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Magon0/Project-Pomodoro
+git clone https://github.com/Magon0/Financial-Management
 ```
 
 2. Acesse a pasta do projeto
 
 ```bash
-cd Project-pomodoro
+cd Financial-Management
 ```
 
 3. Instale as dependências necessárias
@@ -56,8 +52,14 @@ cd Project-pomodoro
 npm install
 ```
 
-4. Execute o projeto
+4. Execute o projeto Frontend
 
 ```bash
 npm run dev
+```
+
+5. Execute o script para subir json-server
+
+```bash
+npm run dev:server
 ```
