@@ -7,6 +7,14 @@
       "type": "income",
       "createdAt": "2023-01-06T23:14:21.593Z",
       "id": 1
+    },
+    {
+      "description": "Salário",
+      "price": 2222,
+      "category": "rd",
+      "type": "income",
+      "createdAt": "2023-01-06T23:25:32.714Z",
+      "id": 2
     }
   ]
 }
