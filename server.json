@@ -1,30 +1,6 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Venda",
-      "price": 2430,
-      "createdAt": "2022-12-28T19:20:40.701Z"
-    },
-    {
-      "id": 2,
-      "description": "Hamburguer",
-      "type": "outcome",
-      "category": "Alimentação",
-      "price": 30,
-      "createdAt": "2022-12-27T19:20:40.701Z"
-    },
-    {
-      "id": 3,
-      "description": "Aluguel do apartamento",
-      "type": "outcome",
-      "category": "Casa",
-      "price": 1400,
-      "createdAt": "2022-12-18T19:20:40.701Z"
-    },
-    {
       "description": "Desenvolvimento de API",
       "price": 3,
       "category": "Venda",
@@ -33,20 +9,44 @@
       "id": 4
     },
     {
-      "description": "Água",
-      "price": 512,
-      "category": "Despesa Fixa",
-      "type": "outcome",
-      "createdAt": "2023-01-04T18:37:30.808Z",
-      "id": 5
-    },
-    {
       "description": "Iorgurte de morango",
       "price": 10,
       "category": "Alimentação",
       "type": "outcome",
       "createdAt": "2023-01-04T19:08:00.412Z",
       "id": 6
+    },
+    {
+      "description": "Aula de Música",
+      "price": 200,
+      "category": "Gasto",
+      "type": "outcome",
+      "createdAt": "2023-01-06T20:24:11.365Z",
+      "id": 7
+    },
+    {
+      "description": "Venda de software",
+      "price": 1500,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-01-06T20:24:31.441Z",
+      "id": 8
+    },
+    {
+      "description": "Venda de software",
+      "price": 1500,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-01-06T20:24:31.441Z",
+      "id": 8
+    },
+    {
+      "description": "Venda de software",
+      "price": 1500,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-01-06T20:24:31.441Z",
+      "id": 8
     }
   ]
 }

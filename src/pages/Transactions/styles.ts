@@ -26,6 +26,14 @@ export const TransactionsTable = styled.table`
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+
+    svg {
+      color: ${(props) => props.theme['gray-500']};
+      &:hover {
+        color: ${(props) => props.theme['red-300']};
+        /* background: white; */
+      }
+    }
   }
 `;
 

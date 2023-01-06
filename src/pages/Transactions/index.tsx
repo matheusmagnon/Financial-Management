@@ -9,9 +9,11 @@ import {
   TransactionContainer,
   TransactionsTable,
 } from './styles';
+import { Trash } from 'phosphor-react';
+import { defaultTheme } from '../../styles/themes/default';
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionsContext);
+  const { transactions, deleteTransaction } = useContext(TransactionsContext);
   return (
     <div>
       <Header />
@@ -33,6 +35,12 @@ export function Transactions() {
                   <td>{transaction.category}</td>
                   <td>
                     {dateFormatter.format(new Date(transaction.createdAt))}
+                  </td>
+                  <td>
+                    <Trash
+                      size={32}
+                      onClick={() => deleteTransaction(transaction)}
+                    />
                   </td>
                 </tr>
               );

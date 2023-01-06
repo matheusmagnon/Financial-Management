@@ -9,7 +9,7 @@ Desafio de React do ignite (Rocketseat)
 ## Design da aplicação
 
 - Clique [aqui](https://coffe-delivery-all4s.ondigitalocean.app/) para acessar a aplicação em produção(apenas desktop)
-- Clique [aqui](<https://www.figma.com/file/21gfmeoPiOsjw64m2zlz6B/Coffee-Delivery-(Copy)?node-id=0%3A1>) para acessar o layout no Figma
+- Clique [aqui](<https://www.figma.com/file/e3vav64scmovejkQMZkw20/DT-Money-(Community)?node-id=42012%3A399&t=6jjwbnHRtzUe1TQ4-0>) para acessar o layout no Figma
 
 ## Funcionalidades da aplicação
 
