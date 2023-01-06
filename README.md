@@ -1,12 +1,10 @@
-# Coffee-Delivery (Aplicação para delivery de cafés)
+# DT Money (Aplicação para gestão Financeira ) -Apenas para monitores grandes-
 
 Desafio de React do ignite (Rocketseat)
 
-##PROJETO EM CONSTRUÇÃO
-
 ## Capa
 
-<img src="./Capa.png" /> <br/> <br/>
+<img src="./src/assets/Capa.png" /> <br/> <br/>
 
 ## Design da aplicação
 
