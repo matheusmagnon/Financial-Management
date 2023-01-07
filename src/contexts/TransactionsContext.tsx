@@ -20,7 +20,7 @@ interface CreateTransactionInput {
 
 interface TransactionContextType {
   transactions: TransactionType[];
-  fetchTransactions: (query: string) => void;
+  // fetchTransactions: (query: string) => Promise<void>;
   createTransaction: (data: CreateTransactionInput) => void;
   deleteTransaction: (transaction: TransactionType) => void;
 }
@@ -75,23 +75,16 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
     },
   ]);
 
-  const fetchTransactions = (query: string) => {
-    // setTransactions();
-    transactions.map((transaction) => {
-      if (transaction.description.includes(query)) {
-        return transaction;
-      }
-    });
-
-    //   const response = await api.get('/transactions', {
-    //     params: {
-    //       _sort: 'createdAt',
-    //       _order: 'desc',
-    //       q: query,
-    //     },
-    //   });
-    //   setTransactions(response.data);
-  };
+  // const fetchTransactions = async (query?: string) => {
+  //   const response = await api.get('/transactions', {
+  //     params: {
+  //       _sort: 'createdAt',
+  //       _order: 'desc',
+  //       q: query,
+  //     },
+  //   });
+  //   setTransactions(response.data);
+  // };
 
   async function createTransaction(data: CreateTransactionInput) {
     const { category, description, price, type } = data;
@@ -132,7 +125,7 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
     <TransactionsContext.Provider
       value={{
         transactions,
-        fetchTransactions,
+        // fetchTransactions,
         createTransaction,
         deleteTransaction,
       }}
