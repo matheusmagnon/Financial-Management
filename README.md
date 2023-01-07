@@ -16,6 +16,7 @@ Desafio de React do ignite (Rocketseat)
 - Listar transações
 - Adicionar uma nova transação de "Entrada" ou "Saída"
 - Excluir transação
+- Buscar por transação
 
 ## Tecnologias utilizadas
 
