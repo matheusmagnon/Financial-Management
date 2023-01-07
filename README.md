@@ -59,7 +59,7 @@ npm install
 npm run dev
 ```
 
-5. Execute o script para subir json-server
+5. Em paralelo abra outro terminal na mesma pasta do projeto e execute o script para subir json-server
 
 ```bash
 npm run dev:server
