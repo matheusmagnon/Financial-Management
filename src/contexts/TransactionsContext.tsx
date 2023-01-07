@@ -1,9 +1,8 @@
 import { createContext, ReactNode, useEffect, useState } from 'react';
 import { api } from '../lib/axios';
-import { v4 as uuidv4 } from 'uuid';
 
 interface TransactionType {
-  id: string;
+  id: number;
   description: string;
   type: 'income' | 'outcome';
   price: number;
@@ -20,8 +19,8 @@ interface CreateTransactionInput {
 
 interface TransactionContextType {
   transactions: TransactionType[];
-  // fetchTransactions: (query: string) => Promise<void>;
-  createTransaction: (data: CreateTransactionInput) => void;
+  fetchTransactions: (query: string) => Promise<void>;
+  createTransaction: (data: CreateTransactionInput) => Promise<void>;
   deleteTransaction: (transaction: TransactionType) => void;
 }
 
@@ -32,100 +31,47 @@ interface TransactionProviderProps {
 export const TransactionsContext = createContext({} as TransactionContextType);
 
 export function TransactionsProvider({ children }: TransactionProviderProps) {
-  const [transactions, setTransactions] = useState<TransactionType[]>([
-    {
-      description: 'Salário',
-      price: 2500,
-      category: 'Salário',
-      type: 'income',
-      createdAt: '2023-01-06T23:14:21.593Z',
-      id: uuidv4(),
-    },
-    {
-      description: 'Café da manhã',
-      price: 18,
-      category: 'Alimentação',
-      type: 'outcome',
-      createdAt: '2023-01-06T23:35:14.307Z',
-      id: uuidv4(),
-    },
-    {
-      description: 'Sandália',
-      price: 45,
-      category: 'Consumo',
-      type: 'outcome',
-      createdAt: '2023-01-06T23:35:54.695Z',
-      id: uuidv4(),
-    },
-    {
-      description: 'Chapinha',
-      price: 200,
-      category: 'Estética',
-      type: 'outcome',
-      createdAt: '2023-01-06T23:36:36.359Z',
-      id: uuidv4(),
-    },
-    {
-      description: 'Energia',
-      price: 508,
-      category: 'Despesa Fixa',
-      type: 'outcome',
-      createdAt: '2023-01-06T23:37:26.435Z',
-      id: uuidv4(),
-    },
-  ]);
+  const [transactions, setTransactions] = useState<TransactionType[]>([]);
 
-  // const fetchTransactions = async (query?: string) => {
-  //   const response = await api.get('/transactions', {
-  //     params: {
-  //       _sort: 'createdAt',
-  //       _order: 'desc',
-  //       q: query,
-  //     },
-  //   });
-  //   setTransactions(response.data);
-  // };
+  const fetchTransactions = async (query?: string) => {
+    const response = await api.get('/transactions', {
+      params: {
+        _sort: 'createdAt',
+        _order: 'desc',
+        q: query,
+      },
+    });
+    setTransactions(response.data);
+  };
 
   async function createTransaction(data: CreateTransactionInput) {
     const { category, description, price, type } = data;
 
-    const newTransaction: TransactionType = {
-      category,
+    const response = await api.post('transactions', {
       description,
       price,
+      category,
       type,
-      createdAt: new Date().toDateString(),
-      id: uuidv4(),
-    };
-    // const response = await api.post('transactions', {
-    //   description,
-    //   price,
-    //   category,
-    //   type,
-    //   createdAt: new Date(),
-    // });
-    console.log(data);
+      createdAt: new Date(),
+    });
 
-    setTransactions((state) => [newTransaction, ...state]);
+    setTransactions((state) => [response.data, ...state]);
   }
 
-  const deleteTransaction = (transactionToDelete: TransactionType) => {
-    setTransactions(
-      transactions.filter(
-        (transaction) => transaction.id !== transactionToDelete.id,
-      ),
-    );
-    // fetchTransactions();
+  const deleteTransaction = async (transaction: TransactionType) => {
+    const { id } = transaction;
+    await api.delete(`transactions/${id}`);
+    fetchTransactions();
   };
-  // useEffect(() => {
-  //   fetchTransactions();
-  // }, []);
+  useEffect(() => {
+    fetchTransactions();
+  }, []);
 
   return (
     <TransactionsContext.Provider
       value={{
         transactions,
-        // fetchTransactions,
+        fetchTransactions,
         createTransaction,
         deleteTransaction,
       }}
