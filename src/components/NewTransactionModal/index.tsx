@@ -38,11 +38,11 @@ export function NewTransactionModal() {
     },
   });
 
-  async function handleCreateNewTransaction(data: newTtransactionFormInputs) {
+  function handleCreateNewTransaction(data: newTtransactionFormInputs) {
     // await new Promise((resolve) => setTimeout(resolve, 2000));
     const { category, description, price, type } = data;
 
-    await createTransaction({ category, description, type, price });
+    createTransaction(data);
 
     reset();
   }
