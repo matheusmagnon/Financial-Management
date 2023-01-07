@@ -16,6 +16,7 @@ Desafio de React do ignite (Rocketseat)
 - Listar transações
 - Adicionar uma nova transação de "Entrada" ou "Saída"
 - Excluir transação
+- Buscar por transação (em desenvolvimento)
 
 ## Tecnologias utilizadas
 
@@ -29,6 +30,7 @@ Desafio de React do ignite (Rocketseat)
 - Zod
 - Axios
 - Phosphor React
+- uuid4
 
 ## Como executar a aplicação
 
