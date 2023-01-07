@@ -13,7 +13,7 @@ const searchFormSchema = z.object({
 type SearchFormInput = z.infer<typeof searchFormSchema>;
 
 export function SearchForm() {
-  // const { fetchTransactions } = useContext(TransactionsContext);
+  const { fetchTransactions } = useContext(TransactionsContext);
 
   const {
     register,
@@ -23,9 +23,10 @@ export function SearchForm() {
     resolver: zodResolver(searchFormSchema),
   });
 
-  async function handleSearchTransactions(data: SearchFormInput) {
+  function handleSearchTransactions(data: SearchFormInput) {
     //   await new Promise((resolve) => setTimeout(resolve, 2000));
     // await fetchTransactions(data.query);
+    fetchTransactions(data.query);
   }
 
   return (
