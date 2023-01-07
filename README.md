@@ -8,8 +8,7 @@ Desafio de React do ignite (Rocketseat)
 
 ## Design da aplicação
 
-- Clique [aqui](https://dtfinancialmanager.netlify.app/) para acessar a aplicação em produção(apenas desktop){:target="_blank"}
-- <a href="http://example.com/" target="_blank">Hello, world!</a>
+- Clique [aqui](https://dtfinancialmanager.netlify.app/) para acessar a aplicação em produção(apenas desktop)
 - Clique [aqui](<https://www.figma.com/file/e3vav64scmovejkQMZkw20/DT-Money-(Community)?node-id=42012%3A399&t=6jjwbnHRtzUe1TQ4-0>) para acessar o layout no Figma
 
 ## Funcionalidades da aplicação
