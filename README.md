@@ -1,6 +1,6 @@
 # DT Money (Aplicação para gestão Financeira )
 
-Desafio de React do ignite (Rocketseat)
+Uma aplicação simples de controle financeiro, esse projeto tem o objetivo de aperfeiçoar o uso de tecnologias Front End. 
 
 ## Capa
 
