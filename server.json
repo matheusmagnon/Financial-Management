@@ -7,6 +7,38 @@
       "type": "income",
       "createdAt": "2023-01-06T23:14:21.593Z",
       "id": 1
+    },
+    {
+      "description": "Café da manhã",
+      "price": 18,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-01-06T23:35:14.307Z",
+      "id": 2
+    },
+    {
+      "description": "Sandália",
+      "price": 45,
+      "category": "Consumo",
+      "type": "outcome",
+      "createdAt": "2023-01-06T23:35:54.695Z",
+      "id": 3
+    },
+    {
+      "description": "Chapinha",
+      "price": 200,
+      "category": "Estética",
+      "type": "outcome",
+      "createdAt": "2023-01-06T23:36:36.359Z",
+      "id": 4
+    },
+    {
+      "description": "Energia",
+      "price": 508,
+      "category": "Despesa Fixa",
+      "type": "outcome",
+      "createdAt": "2023-01-06T23:37:26.435Z",
+      "id": 5
     }
   ]
 }

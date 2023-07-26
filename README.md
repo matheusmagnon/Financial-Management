@@ -1,6 +1,6 @@
 # DT Money (Aplicação para gestão Financeira )
 
-Uma aplicação simples de controle financeiro, esse projeto tem o objetivo de aperfeiçoar o uso de tecnologias Front End. 
+Desafio de React do ignite (Rocketseat)
 
 ## Capa
 
@@ -16,7 +16,6 @@ Uma aplicação simples de controle financeiro, esse projeto tem o objetivo de a
 - Listar transações
 - Adicionar uma nova transação de "Entrada" ou "Saída"
 - Excluir transação
-- Buscar por transação
 
 ## Tecnologias utilizadas
 
@@ -59,7 +58,7 @@ npm install
 npm run dev
 ```
 
-5. Em paralelo abra outro terminal na mesma pasta do projeto e execute o script para subir json-server
+5. Execute o script para subir json-server
 
 ```bash
 npm run dev:server

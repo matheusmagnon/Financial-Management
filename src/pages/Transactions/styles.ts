@@ -16,6 +16,7 @@ export const TransactionsTable = styled.table`
   td {
     padding: 1.25rem 2rem;
     background: ${(props) => props.theme['gray-700']};
+    white-space: nowrap;
 
     &:first-child {
       border-top-left-radius: 6px;
